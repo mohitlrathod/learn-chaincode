@@ -14,6 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+// THIS CODE THIS ADDED BY MOHIT.
+
 package main
 
 import (
@@ -40,7 +42,7 @@ func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface, function string
 		return nil, errors.New("Incorrect number of arguments. Expecting 1")
 	}
 
-	err := stub.PutState("hello_world", []byte(args[0]))
+	err := stub.PutState("hello_world FROM MOHIT ", []byte(args[0]))
 	if err != nil {
 		return nil, err
 	}
